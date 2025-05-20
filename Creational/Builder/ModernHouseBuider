@@ -1,0 +1,12 @@
+//Concrete Builder, one variation out of many
+public class ModernHouseBuilder : IHouseBuilder
+{
+    private House _house = new House();
+
+    public void BuildFoundation() => _house.Foundation = "Concrete Slab";
+    public void BuildStructure() => _house.Structure = "Steel and Glass";
+    public void BuildRoof() => _house.Roof = "Flat Roof";
+    public void BuildGarage() => _house.HasGarage = true;
+
+    public House GetHouse() => _house;
+}

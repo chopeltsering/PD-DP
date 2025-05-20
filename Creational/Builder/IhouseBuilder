@@ -1,0 +1,9 @@
+//Builder Interface
+public interface IHouseBuilder
+{
+    void BuildFoundation();
+    void BuildStructure();
+    void BuildRoof();
+    void BuildGarage();
+    House GetHouse();
+}

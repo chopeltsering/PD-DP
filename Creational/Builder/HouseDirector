@@ -1,0 +1,15 @@
+//Director. orchestrates the steps and ensure the order of construction is followed.
+public class HouseDirector
+{
+    private IHouseBuilder _builder;
+
+    public HouseDirector(IHouseBuilder builder) => _builder = builder;
+
+    public void ConstructHouse()
+    {
+        _builder.BuildFoundation();
+        _builder.BuildStructure();
+        _builder.BuildRoof();
+        _builder.BuildGarage();
+    }
+}

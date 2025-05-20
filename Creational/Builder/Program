@@ -1,0 +1,14 @@
+//Client Code
+class Program
+{
+    static void Main()
+    {
+        IHouseBuilder builder = new ModernHouseBuilder();
+        HouseDirector director = new HouseDirector(builder);
+
+        director.ConstructHouse();
+        House house = builder.GetHouse();
+
+        Console.WriteLine(house);
+    }
+}
